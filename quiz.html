@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Matematika Kelas 1 SD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #4caf50;
+        }
+
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latihan Soal</h1>
+        <p>Matematika Kelas 1 SD</p>
+    </header>
+
+    <main>
+        <h2>Latihan Penjumlahan</h2>
+        <div class="question">
+            <p>1. Berapakah 2 + 3?</p>
+            <input type="text" id="answer1">
+        </div>
+        <div class="question">
+            <p>2. Berapakah 4 + 5?</p>
+            <input type="text" id="answer2">
+        </div>
+        <div class="question">
+            <p>3. Berapakah 6 + 4?</p>
+            <input type="text" id="answer3">
+        </div>
+
+        <h2>Latihan Pengurangan</h2>
+        <div class="question">
+            <p>1. Berapakah 5 - 2?</p>
+            <input type="text" id="answer4">
+        </div>
+        <div class="question">
+            <p>2. Berapakah 7 - 3?</p>
+            <input type="text" id="answer5">
+        </div>
+        <div class="question">
+            <p>3. Berapakah 10 - 4?</p>
+            <input type="text" id="answer6">
+        </div>
+
+        <h2>Latihan Bentuk Geometri</h2>
+        <div class="question">
+            <p>1. Bentuk apa yang memiliki 4 sisi sama panjang?</p>
+            <input type="text" id="answer7">
+        </div>
+        <div class="question">
+            <p>2. Bentuk apa yang bulat dan tidak memiliki sudut?</p>
+            <input type="text" id="answer8">
+        </div>
+        <div class="question">
+            <p>3. Bentuk apa yang memiliki 3 sisi?</p>
+            <input type="text" id="answer9">
+        </div>
+
+        <button onclick="checkAnswers()">Periksa Jawaban</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pembelajaran Matematika Interaktif</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const answers = [
+                document.getElementById('answer1').value,
+                document.getElementById('answer2').value,
+                document.getElementById('answer3').value,
+                document.getElementById('answer4').value,
+                document.getElementById('answer5').value,
+                document.getElementById('answer6').value,
+                document.getElementById('answer7').value.toLowerCase(),
+                document.getElementById('answer8').value.toLowerCase(),
+                document.getElementById('answer9').value.toLowerCase()
+            ];
+
+            const correctAnswers = ['5', '9', '10', '3', '4', '6', 'persegi', 'lingkaran', 'segitiga'];
+            let score = 0;
+
+            for (let i = 0; i < answers.length; i++) {
+                if (answers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            alert('Skor Anda: ' + score + '/9');
+        }
+    </script>
+</body>
+</html>

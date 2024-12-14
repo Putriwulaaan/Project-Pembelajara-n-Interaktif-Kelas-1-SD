@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Interaktif Matematika Kelas 1 SD</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #4caf50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        header img {
+            width: auto;
+            height: 40px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #45a049;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .hero img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .hero-content {
+            margin-top: 20px;
+        }
+        .hero-content h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .hero-content button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero-content button:hover {
+            background-color: #45a049;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-content h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+        }
+        .card-content button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card-content button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <button>Home</button>
+            <button>Materi</button>
+            <button>Kontak</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="hero-banner.jpg" alt="Banner Utama">
+        <div class="hero-content">
+            <h1>Belajar Matematika Kelas 1 SD dengan Mudah dan Menyenangkan</h1>
+            <button onclick="window.location.href='materi.html'">Materi</button>
+            <button onclick="window.location.href='latihan_soal.html'">Latihan Soal</button>
+            <button onclick="window.location.href='quiz.html'">Quiz</button>
+        </div>
+    </section>
+
+    <!-- Highlight Produk -->
+    <main>
+        <div class="card">
+            <img src="penjumlahan.jpg" alt="Materi Penjumlahan">
+            <div class="card-content">
+                <h3>Penjumlahan</h3>
+                <p>Pelajari cara menjumlahkan angka dari 1 hingga 10.</p>
+                <button onclick="window.location.href='materi_penjumlahan.html'">Pelajari Sekarang</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="angka.jpg" alt="Pengenalan Angka">
+            <div class="card-content">
+                <h3>Pengenalan Angka</h3>
+                <p>Belajar mengenal angka 1 sampai 10.</p>
+                <button onclick="window.location.href='materi_angka.html'">Pelajari Sekarang</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="geometri.jpg" alt="Bentuk Geometri">
+            <div class="card-content">
+                <h3>Bentuk Geometri</h3>
+                <p>Pengenalan berbagai bentuk geometri dasar.</p>
+                <button onclick="window.location.href='materi_geometri.html'">Pelajari Sekarang</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pengurangan.jpg" alt="Materi Pengurangan">
+            <div class="card-content">
+                <h3>Pengurangan</h3>
+                <p>Pelajari cara mengurangkan angka dari 1 hingga 10.</p>
+                <button onclick="window.location.href='materi_pengurangan.html'">Pelajari Sekarang</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <img src="logo.png" alt="Logo" style="height: 40px;">
+        <p>&copy; 2024 Pembelajaran Matematika Interaktif</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="kontak.html">Kontak</a>
+    </footer>
+</body>
+</html>
